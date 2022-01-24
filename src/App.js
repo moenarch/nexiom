@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDom from 'react-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import markdown from './Introduction.md';
