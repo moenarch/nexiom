@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/nexiom/static/css/main.e6c13ad2.css",
+    "main.js": "/nexiom/static/js/main.ce993c14.js",
+    "index.html": "/nexiom/index.html",
+    "static/media/Introduction.md": "/nexiom/static/media/Introduction.9c3574b04c3595976060.md",
+    "main.e6c13ad2.css.map": "/nexiom/static/css/main.e6c13ad2.css.map",
+    "main.ce993c14.js.map": "/nexiom/static/js/main.ce993c14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ce993c14.js"
+  ]
+}
