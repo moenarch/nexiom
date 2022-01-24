@@ -19,23 +19,13 @@ jobs:
         node-version: '17'
     - name: NPM
       run: |
-        cd react
         npm install create-react-app
+        yarn add gh-pages
         npm install
-        cd ..
     - name: Deploy GitHub Pages
       run: |
-        cd react
-        npm run build
-        cd ..
-        git worktree add gh-pages gh-pages
-        git config user.name "Deploy from CI"
-        git config user.email ""
-        cd gh-pages
-        # Delete the ref to avoid keeping history.
-        # git update-ref -d refs/heads/gh-pages
-        rm -rf *
-        mv ../react/build/* .
-        git add .
-        git commit -m "Deploy $GITHUB_SHA to gh-pages"
-        git push --force
+        git remote add origin https://github.com/moenarch/nexiom
+        npm run predeploy
+        npm run deploy
+        
+      
