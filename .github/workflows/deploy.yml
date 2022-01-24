@@ -22,10 +22,12 @@ jobs:
         cd react
         npm install create-react-app
         npm install
-        npm run build
         cd ..
     - name: Deploy GitHub Pages
       run: |
+        cd react
+        npm run build
+        cd ..
         git worktree add gh-pages gh-pages
         git config user.name "Deploy from CI"
         git config user.email ""
